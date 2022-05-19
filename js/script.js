@@ -1,4 +1,18 @@
 $(document).ready(function () {
+
+    // delivery 
+    new Swiper('.sw-slider', {
+        pagination: {
+            el: ".sw-slider-pg",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: '.slide-button-next',
+            prevEl: '.slide-button-prev'
+        }
+    });
+
+
     // sidebar
     let sidebar = $('.sidebar');
     let sidebarDiv = $('.side-bar');
@@ -27,23 +41,11 @@ $(document).ready(function () {
 
     // banner
     let popup = $('.popup')
-    popup.click(function (event) {
+    let popupClose = $('.popup-close');
+    popupClose.click(function (event) {
         event.preventDefault();
-        event.stopPropagation();
-
-
+        popup.hide();
     });
 
 
-});
-// delivery 
-new Swiper('.sw-slider', {
-pagination: {
-    el: ".sw-slider-pg",
-    type: "fraction",
-},
-navigation: {
-    nextEl: '.slide-button-next',
-    prevEl: '.slide-button-prev'
-}
 });
