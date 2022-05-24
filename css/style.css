@@ -612,7 +612,7 @@ body {
     /* background-color: #000; */
     position: absolute;
     display: inline-block;
-    background: url('./images/cart.svg') no-repeat center #000;
+    background: url('../images/cart.svg') no-repeat center #000;
     background-size: 82%;
     /* background-image: url('../images/cart3_w.svg') no-repeat center; */
     width: 72px;
