@@ -1,5 +1,10 @@
 $(document).ready(function () {
-
+    // 모달창
+    let modal_close = $('.modal-close');
+    let modal = $('.modal');
+    modal_close.click(function () {
+        modal.hide();
+    });
     // delivery 
     new Swiper('.sw-slider', {
         pagination: {
